@@ -1,4 +1,8 @@
+/cmake-build-debug
+/.idea/workspace.xml
 /build
+/.build
+/.stage
 /dist
 /plugin.so
 /plugin.dylib
