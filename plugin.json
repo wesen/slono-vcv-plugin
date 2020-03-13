@@ -1,0 +1,16 @@
+{
+  "slug": "slono",
+  "name": "slono",
+  "version": "1.0.0",
+  "license": "MIT",
+  "brand": "slono",
+  "author": "slono",
+  "authorEmail": "wesen@ruinwesen.com",
+  "authorUrl": "",
+  "pluginUrl": "",
+  "manualUrl": "",
+  "sourceUrl": "",
+  "donateUrl": "",
+  "changelogUrl": "",
+  "modules": []
+}
