@@ -1,2 +1,2 @@
-add_subdirectory(googletest)
-add_subdirectory(racksdk)
+#add_subdirectory(googletest)
+#add_subdirectory(racksdk)

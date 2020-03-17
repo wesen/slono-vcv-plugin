@@ -33,7 +33,7 @@ target_sources(plugin
 
 target_link_libraries(plugin
     PUBLIC
-    Rack::SDK
+    racklib
     )
 
 IF (APPLE)
