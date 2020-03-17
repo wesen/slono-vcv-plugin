@@ -2,21 +2,25 @@
 
 cmake_minimum_required (VERSION 3.13)
 #project (slono VERSION 1.0.0 LANGUAGES CXX)
-enable_testing()
+enable_testing ()
 
-set(RACK_STAGING_DIR /home/manuel/.Rack)
-set(RACK_PLUGINS_DIR ${RACK_STAGING_DIR}/plugins-v1/${PROJECT_NAME})
+if (APPLE)
+    set (RACK_STAGING_DIR /Users/manuel/Documents/Rack)
+elseif (UNIX)
+    set (RACK_STAGING_DIR /home/manuel/.Rack)
+endif ()
+set (RACK_PLUGINS_DIR ${RACK_STAGING_DIR}/plugins-v1/slono)
 
-add_subdirectory(external)
-add_subdirectory(plugin)
+add_subdirectory (external)
+add_subdirectory (plugin)
 
-install(DIRECTORY svg
+install (DIRECTORY res
     DESTINATION ${RACK_PLUGINS_DIR}
     )
-install(DIRECTORY presets
+install (DIRECTORY presets
     DESTINATION ${RACK_PLUGINS_DIR}
     )
-install(FILES LICENSE.txt plugin.json
+install (FILES LICENSE.txt plugin.json
     DESTINATION ${RACK_PLUGINS_DIR}
     )
 

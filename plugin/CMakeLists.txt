@@ -29,11 +29,12 @@ target_sources(plugin
     PRIVATE
     plugin.cpp
     plugin.hpp
+    MyModule.h
     )
 
 target_link_libraries(plugin
-    PUBLIC
-    racklib
+    PRIVATE
+    Rack::SDK
     )
 
 IF (APPLE)
